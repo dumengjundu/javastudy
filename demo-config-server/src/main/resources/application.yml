@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: springcloud-config-server
+  profiles:
+    active: native
+
+server:
+  port: 9005
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:7000/eureka/, http://server2:7001/eureka/
